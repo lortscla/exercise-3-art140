@@ -9,6 +9,76 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
+    <style>
+    body {
+        background: #ffffff; /* dark gray background */
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      /* Layout containers */
+      
+      #footer {
+        width: 1440px;
+        margin: 20px;
+        padding: 30px;
+        background: white;
+      }
+      #site-header {
+        width: 1440px;
+        margin: 20px;
+        padding: 30px;
+        background: white;
+      }
+      #content {
+        width: 1440px;
+        margin: 20px;
+        padding: 30px;
+        background: rgb(131, 53, 53);
+      }
+      #content > .row {
+        width: 1440px;
+        margin: 20px;
+        padding: 30px;
+        background: white;
+      }
+
+      /* Row setup */
+      .row {
+        display: flex;
+      }
+
+      /* Box styles */
+      .row > div {
+        border: 1px solid #ccc;
+        padding: 30px;
+        text-align: center;
+        background: #fff;
+      }
+
+      /* Column widths */
+      .col-100 {
+        flex: 1;
+      }
+
+      .col-a {
+        flex: 1;
+      }
+
+      .col-b {
+        width: 200px;
+      }
+
+      .col-50 {
+        flex: 1;
+      }
+
+      .col-33 {
+        flex: 1;
+      }
+    </style>
   </head>
   <body>
     <header id="site-header">
@@ -27,7 +97,7 @@
 
         <div class="row">
           <div class="col-50">col-50</div>
-          <div class="col-51">col-50</div>
+          <div class="col-50">col-50</div>
         </div>
 
         <div class="row">
@@ -36,13 +106,12 @@
           <div class="col-33">col-33</div>
         </div>
       </div>
+
       <footer>
         <div class="row">
-          <div class="col-101">footer: col-100</div>
+          <div class="col-100">footer: col-100</div>
         </div>
       </footer>
     </main>
   </body>
-      <link rel="stylesheet" href="styles/style.css" />
 </html>
-Back to Top
