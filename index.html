@@ -10,55 +10,48 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
     <style>
+
     body {
-        background: #ffffff; /* dark gray background */
-        margin: 10px;
+        background: #b1b1b1; 
+        margin: 0px;
         display: flex;
         flex-direction: column;
         align-items: center;
       }
 
-      /* Layout containers */
-      
-      #footer {
-        width: 1440px;
-        margin: 20px;
-        padding: 30px;
-        background: white;
+      header {
+      background-color: #ffffff; 
+      padding: 20px;
       }
+
       #site-header {
         width: 1440px;
-        margin: 20px;
-        padding: 30px;
-        background: white;
+        margin: 0px;
+        padding: 50px;
       }
+      
       #content {
         width: 1440px;
         margin: 20px;
         padding: 30px;
-        background: rgb(131, 53, 53);
+        background: rgb(255, 255, 255);
+        border-radius: 10px;
       }
-      #content > .row {
-        width: 1440px;
-        margin: 20px;
-        padding: 30px;
-        background: white;
-      }
-
-      /* Row setup */
+      
+      /* Rows */
       .row {
         display: flex;
       }
 
-      /* Box styles */
+      /* box styles */
       .row > div {
-        border: 1px solid #ccc;
+        border: 1px solid #7f7f7f;
         padding: 30px;
         text-align: center;
         background: #fff;
       }
 
-      /* Column widths */
+      /* Ind. box widths */
       .col-100 {
         flex: 1;
       }
@@ -78,6 +71,7 @@
       .col-33 {
         flex: 1;
       }
+      
     </style>
   </head>
   <body>
@@ -89,6 +83,7 @@
       </div>
     </header>
     <main>
+
       <div id="content">
         <div class="row">
           <div class="col-a">col-a</div>
@@ -105,13 +100,11 @@
           <div class="col-33">col-33</div>
           <div class="col-33">col-33</div>
         </div>
-      </div>
 
-      <footer>
         <div class="row">
           <div class="col-100">footer: col-100</div>
         </div>
-      </footer>
+
     </main>
   </body>
 </html>
